@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+   
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+#main{
+    display:flex;
+    width: 100%;
+    height: 100%;
+   
+}
+#left{
+    position: relative;
+    width:40%;
+    height: 100%;
+   
+}
+#right{
+   
+    width: 60%;
+    height:100%;
+    background-color: white;
+}
+#rtop{
+    display: flex;
+    width:100%;
+    height:50%;
+    background-color: blue;
+}
+
+#rtop-left{
+    width: 55%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+
+}
+#rtop-right{
+    width: 45%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1539248519424-b4b8f9a99a4a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+} 
+
+#rbottom{
+height:50%;
+width:100%;
+background-color: blueviolet;
+background-image: url(https://images.unsplash.com/photo-1557180295-76eee20ae8aa?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+background-size: cover;
+background-position: center;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    padding:20px 30px;
+}
+#right-nav a {
+   margin-right:20px;
+   text-decoration:none;
+   font-size: 20px;
+   color: black;
+}
+
+#right-nav{
+  display: flex;
+  align-items: center;
+}
+
+#right-nav i{
+    color: royalblue;
+}
+
+#text-center{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#text-center h1{
+    font-size: 75px;
+    font-weight: 1200;
+}
+
+#text-center p{
+ opacity: .6;
+ font-size: 16px;
+ margin-top: 20px;
+ margin-bottom: 10px;
+ line-height: 25px;
+}
+
+#text-center a{
+  text-decoration: none;
+  color:black;
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: .6;
+
+}
+
+@media(max-width:500px){
+    #main{
+        flex-direction: column;
+    }
+
+    #main #left{
+        width:100%;
+    }
+
+    #main #right{
+        width:100%;
+    }
+
+    #text-center{
+        margin-top:20px;
+    }
+}
